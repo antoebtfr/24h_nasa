@@ -1,6 +1,6 @@
 #body {
   height: 100vh;
-  background: url(https://img-new.cgtrader.com/items/1884086/9d9d38b86a/solar-system-3d-model-max-obj-mtl-fbx-ma-mb-blend.jpg);
+  background-color: black;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -12,21 +12,25 @@ h1 {
   padding-top: 20px;
 }
 
-.fixed {
+#modal {
+  width: 80vw;
+  height: 80vh;
+  background: red;
   position: fixed;
+  top: 100px;
+  right: 100px;
 }
 
-#earth {
-  width: 10vh;
-  height: 10vh;
-  top: 43vh;
-  left: 34.5vw;
-  border-radius: 50%;
+#btn {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.4em;
   cursor: pointer;
-  transition: 0.8s;
 }
 
-#earth:hover::before {
+.planet:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -39,48 +43,99 @@ h1 {
   transition: 0.8s;
 }
 
-#modal{
-    width: 80vw;
-    height: 80vh;
-    background: red;
-    position: fixed;
-    top: 100px;
-    right: 100px;
-}
-
-#btn{
-    color: white;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 1.4em;
-    cursor: pointer;
-}
-
 @keyframes ripple {
-    100%{
-        transform: scale(2);
-        opacity: 0;
-    }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
-.planet{
+.planet {
   width: 10vw;
   height: 10vw;
+  transition: 0.8s;
 }
 
 /* Planets, Stars and  Satellite */
 
-.planet{
+.planet {
   background-size: cover;
   background-position: center;
-  cursor:pointer; 
+  cursor: pointer;
 }
 
-#soleil{
+#soleil {
   position: fixed;
   top: -40vh;
   left: -80vw;
   width: 200vh;
   height: 200vh;
+  border-radius: 50%;
+}
+
+#mercure {
+  position: fixed;
+  top: 48vh;
+  left: 21vw;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+}
+
+#vénus {
+  position: fixed;
+  top: 44vh;
+  left: 28vw;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+}
+
+#terre {
+  position: fixed;
+  top: 43.5vh;
+  left: 35.5vw;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+}
+
+#mars {
+  position: fixed;
+  top: 40.7vh;
+  left: 44.3vw;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+}
+#jupiter {
+  position: fixed;
+  top: 29vh;
+  left: 50vw;
+  width: 24vh;
+  height: 24vh;
+  border-radius: 50%;
+}
+#saturne {
+  position: fixed;
+  top: 23vh;
+  left: 63vw;
+  width: 27vh;
+  height: 27vh;
+}
+
+#uranus {
+  position: fixed;
+  top: 25.5vh;
+  left: 77.5vw;
+  width: 10vh;
+  height: 10vh;
+}
+
+#neptune {
+  position: fixed;
+  top: 19vh;
+  left: 85.5vw;
+  width: 10vh;
+  height: 10vh;
 }
