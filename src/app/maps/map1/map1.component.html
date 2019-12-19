@@ -1,0 +1,13 @@
+<section id="body">
+    <h1> Système solaire </h1>
+</section>
+
+<!-- Planets, satellite and stars -->
+
+<div id="earth" class="fixed"></div>
+<div *ngFor="let planet of planets" id="{{planet.name | lowercase }}" class="planet" (click)="toggleModal()" style.background-image="url({{planet.img}})">
+</div>
+
+<div [hidden]="!modalIsOpen" id="modal">
+    <div id="btn" (click)="toggleModal()">X</div>
+</div>
