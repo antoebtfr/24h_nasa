@@ -4,6 +4,8 @@
 
 <!-- Planets, satellite and stars -->
 
+<div id="particles-js"></div>
+
 <div *ngFor="let planet of planets" id="{{planet.name | lowercase }}" class="planet" (click)="toggleModal()"
     style.background-image="url({{planet.img}})">
 </div>
