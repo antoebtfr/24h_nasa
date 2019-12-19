@@ -1,0 +1,50 @@
+#body {
+  background-image: url(https://www.cite-espace.com/assets/images/backgrounds/practical-informations__header.jpg);
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.modes {
+  width: 75vw;
+  height: 60vh;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mode {
+  width: 40%;
+  cursor: pointer;
+  border-radius: 20px;
+  border: solid white 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 2em;
+  transition: 1s;
+}
+
+.mode:hover {
+  width: 50%;
+}
+.mode span {
+  padding: 20px;
+}
+
+#mode-explo {
+  background-image: url(https://www.tourmag.com/photo/art/grande/17266585-21781051.jpg?v=1506087441);
+  background-position: center;
+}
+
+#mode-bdd {
+  background-image: url(http://img.over-blog.com/500x400/1/77/56/11/images-4/HD-140283l.jpg);
+  background-position: center;
+}
