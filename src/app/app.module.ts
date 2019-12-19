@@ -10,6 +10,7 @@ import { ModeSelectComponent } from './pages/mode-select/mode-select.component';
 import { ExploModeComponent } from './pages/explo-mode/explo-mode.component';
 import { Map1Component } from './maps/map1/map1.component';
 
+import { VariablesGlobales } from '../app/variableGlobales';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,7 @@ import { Map1Component } from './maps/map1/map1.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [VariablesGlobales],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

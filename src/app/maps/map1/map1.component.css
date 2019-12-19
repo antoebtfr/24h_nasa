@@ -12,22 +12,20 @@ h1 {
   padding-top: 20px;
 }
 
-#modal {
-  width: 80vw;
-  height: 80vh;
-  background: red;
-  position: fixed;
-  top: 100px;
-  right: 100px;
+@keyframes ripple {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
-#btn {
-  color: white;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 1.4em;
+/* Planets, Stars and  Satellite */
+
+.planet {
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
+  position: fixed;
 }
 
 .planet:hover::before {
@@ -43,29 +41,7 @@ h1 {
   transition: 0.8s;
 }
 
-@keyframes ripple {
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.planet {
-  width: 10vw;
-  height: 10vw;
-  transition: 0.8s;
-}
-
-/* Planets, Stars and  Satellite */
-
-.planet {
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-}
-
 #soleil {
-  position: fixed;
   top: -40vh;
   left: -80vw;
   width: 200vh;
@@ -74,7 +50,6 @@ h1 {
 }
 
 #mercure {
-  position: fixed;
   top: 48vh;
   left: 21vw;
   width: 7vh;
@@ -83,7 +58,6 @@ h1 {
 }
 
 #vénus {
-  position: fixed;
   top: 44vh;
   left: 28vw;
   width: 10vh;
@@ -92,7 +66,6 @@ h1 {
 }
 
 #terre {
-  position: fixed;
   top: 43.5vh;
   left: 35.5vw;
   width: 6vh;
@@ -101,7 +74,6 @@ h1 {
 }
 
 #mars {
-  position: fixed;
   top: 40.7vh;
   left: 44.3vw;
   width: 6vh;
@@ -109,7 +81,6 @@ h1 {
   border-radius: 50%;
 }
 #jupiter {
-  position: fixed;
   top: 29vh;
   left: 50vw;
   width: 24vh;
@@ -117,7 +88,6 @@ h1 {
   border-radius: 50%;
 }
 #saturne {
-  position: fixed;
   top: 23vh;
   left: 63vw;
   width: 27vh;
@@ -125,7 +95,6 @@ h1 {
 }
 
 #uranus {
-  position: fixed;
   top: 25.5vh;
   left: 77.5vw;
   width: 10vh;
@@ -133,17 +102,60 @@ h1 {
 }
 
 #neptune {
-  position: fixed;
   top: 19vh;
   left: 85.5vw;
   width: 10vh;
   height: 10vh;
 }
 
-#particles-js{
+#particles-js {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
+}
+
+/* Modal */
+
+#modal {
+  width: 80vw;
+  height: 80vh;
+  background: red;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  transition: 1s;
+}
+
+#mod-planet-img {
+  height: 80vh;
+  position: relative;
+  right: 30vh;
+  max-width: 55vw;
+  border-radius: 50%;
+}
+.mod-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#btn {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.4em;
+  cursor: pointer;
+  z-index:10; 
+}
+
+.mod-text h2{
+  font-size: 3em; 
 }
