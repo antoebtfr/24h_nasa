@@ -1,0 +1,7 @@
+#body {
+  height: 100vh;
+  background-image: url(https://img.lemde.fr/2016/08/14/33/0/1041/520/1440/720/60/0/e51d899_31915-etsnk0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+}

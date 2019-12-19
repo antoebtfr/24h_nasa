@@ -1,0 +1,47 @@
+#body {
+  height: 100vh;
+  background-image: url(https://img.lemde.fr/2016/08/14/33/0/1041/520/1440/720/60/0/e51d899_31915-etsnk0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+}
+
+#content {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  color: white;
+}
+h1 {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2em;
+  font-size: 3em;
+  margin-bottom: 5vh;
+  position: relative;
+  left: 3vw;
+}
+
+.btn {
+  width: 13vw;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Mono", monospace;
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.btn:hover{
+    box-shadow: inset -10px -10px 190px black;
+    border-radius: 100px;
+}
