@@ -50,7 +50,7 @@ label {
   width: 3vw;
   height: 3vw;
   position: fixed;
-  background-color: rgb(41, 107, 147);
+  background-color: #07196dc9;
   border-radius: 50%;
   border: solid white 2px;
   display: flex;
@@ -100,7 +100,7 @@ label {
 #modal {
   width: 80vw;
   height: 80vh;
-  background: #000000c9;
+  background-color: #07196dc9;
   position: fixed;
   top: 100px;
   right: 100px;

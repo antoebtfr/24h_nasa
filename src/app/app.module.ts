@@ -13,6 +13,7 @@ import { Map1Component } from './maps/map1/map1.component';
 import { VariablesGlobales } from '../app/variableGlobales';
 import { MysteryMapComponent } from './maps/mystery-map/mystery-map.component';
 import { BddPagesComponent } from './pages/bdd-pages/bdd-pages.component';
+import { Map2Component } from './maps/map2/map2.component'; ;
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { BddPagesComponent } from './pages/bdd-pages/bdd-pages.component';
     Map1Component,
     MysteryMapComponent,
     BddPagesComponent,
+    Map2Component,
   ],
   imports: [
     BrowserModule,

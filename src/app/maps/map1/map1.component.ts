@@ -14,7 +14,7 @@ export class Map1Component implements OnInit {
   constructor(private _plaServ: PlaneteService, public varGlo: VariablesGlobales) { }
 
   ngOnInit() {
-    this._plaServ.getPlanets()
+    this._plaServ.getPlanetsSysSol()
       .subscribe(data => this.planets = data);
     this.planetHover();
     this.planetLeave();
@@ -50,14 +50,4 @@ export class Map1Component implements OnInit {
     });
   }
 
-  // planetLeave() {
-  //   document.getElementById('particles-js').addEventListener('mouseover', () => {
-  //     let result;
-  //     result = document.getElementsByClassName('planet');
-  //     for (const div of result) {
-  //       div.style.backgroundColor = 'yellow';
-  //     }
-  //     console.log(result);
-  //   });
-  // }
 }

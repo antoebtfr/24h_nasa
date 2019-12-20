@@ -13,12 +13,13 @@ export class BddPagesComponent implements OnInit {
   constructor(private _plaServ: PlaneteService, public varGlo: VariablesGlobales) { }
 
   ngOnInit() {
-    this._plaServ.getPlanets().subscribe(data => this.solarSys = data);
+    this._plaServ.getPlanetsSysSol().subscribe(data => this.solarSys = data);
   }
 
   clickElement(name, img, bio) {
     this.clicked = !this.clicked;
     this.varGlo.name = name;
+
     this.varGlo.img = img;
     this.varGlo.bio = bio;
   }

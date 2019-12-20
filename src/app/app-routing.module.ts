@@ -1,3 +1,4 @@
+import { Map2Component } from './maps/map2/map2.component';
 import { BddPagesComponent } from './pages/bdd-pages/bdd-pages.component';
 import { MysteryMapComponent } from './maps/mystery-map/mystery-map.component';
 import { Map1Component } from './maps/map1/map1.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'explo-mode', component: ExploModeComponent },
   { path: 'explo-mode/map1', component: Map1Component },
   { path: 'explo-mode/mystery', component: MysteryMapComponent },
+  { path: 'explo-mode/map2', component: Map2Component },
   { path: 'bdd', component: BddPagesComponent }
 ];
 
