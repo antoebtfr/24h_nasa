@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MysteryMapComponent implements OnInit {
 
   modIsOpen = true;
+  endIsOpen = false;
   constructor() { }
 
   ngOnInit() {
@@ -15,7 +16,10 @@ export class MysteryMapComponent implements OnInit {
 
   toggleMod() {
     this.modIsOpen = !this.modIsOpen;
-    console.log(this.modIsOpen);
+    this.endIsOpen = true;
+    setTimeout(() => {
+      document.getElementById('end').style.opacity = '1';
+    }, 5000);
   }
 
 }

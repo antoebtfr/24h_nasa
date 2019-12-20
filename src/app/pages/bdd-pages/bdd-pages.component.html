@@ -1,6 +1,6 @@
 <section id="body">
     <h2>Base de données</h2>
-    <label>Système Solaire </label>
+    <label id="name"> {{name}} </label>
     <ul id='solar-system'>
         <li *ngFor="let planet of solarSys" class="planet" style.background-image="url({{planet.img}})"
             (click)="clickElement(planet.name, planet.img, planet.bio)"></li>

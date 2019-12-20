@@ -46,7 +46,9 @@ label {
   height: 100vh;
   background: red;
 }
-
+#name{
+  transition: 2s;
+}
 .arrow {
   width: 3vw;
   height: 3vw;
