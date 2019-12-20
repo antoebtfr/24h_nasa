@@ -1,1 +1,21 @@
-<p>bdd-pages works!</p>
+<section id="body">
+    <h2>Base de données</h2>
+    <label>Système Solaire </label>
+    <ul id='solar-system'>
+        <li *ngFor="let planet of solarSys" class="planet" style.background-image="url({{planet.img}})"
+            (click)="clickElement(planet.name, planet.img, planet.bio)"></li>
+    </ul>
+    <section *ngIf='clicked' id="modal">
+        <div id="btn" (click)="clickElement()">X</div>
+        <img id="mod-planet-img" [src]="varGlo.img">
+        <div class="mod-text">
+            <h2> {{varGlo.name}} </h2>
+            <div class="mod-bio"> {{varGlo.bio}} </div>
+        </div>
+    </section>
+</section>
+
+<!--         Only fixed elements -->
+<div class="arrow" id="right">></div>
+<div class="arrow" id="left">
+    <</div>

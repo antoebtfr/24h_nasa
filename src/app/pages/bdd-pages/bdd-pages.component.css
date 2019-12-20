@@ -1,0 +1,145 @@
+#body {
+  background-image: url(https://www.azutura.com/media/catalog/product/cache/49/image/650x/040ec09b1e35df139433887a97daa66f/W/S/WS-47373_WP.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h2 {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  font-size: 3em;
+}
+
+label {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 100vw;
+  display: block;
+  letter-spacing: 1.1em;
+}
+
+#solar-system {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-around;
+}
+.planet {
+  width: 15vw;
+  height: 15vw;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.planet:hover {
+  width: 17vw;
+  height: 17vw;
+}
+
+#details {
+  height: 100vh;
+  background: red;
+}
+
+.arrow {
+  width: 3vw;
+  height: 3vw;
+  position: fixed;
+  background-color: rgb(41, 107, 147);
+  border-radius: 50%;
+  border: solid white 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: 25.75vw;
+  font-size: 1.2em;
+  transition: 0.8s;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow:hover {
+  color: black;
+  background-color: white;
+}
+
+.arrow:hover::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  animation: ripple 2s linear infinite;
+  border-radius: 50%;
+  border: solid white 2px;
+}
+
+#right.arrow {
+  right: 3vw;
+}
+
+#left.arrow {
+  left: 3vw;
+}
+
+@keyframes ripple {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Modal */
+#modal {
+  width: 80vw;
+  height: 80vh;
+  background: #000000c9;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  transition: 1s;
+  border-radius: 30px;
+}
+
+#mod-planet-img {
+  height: 80vh;
+  position: relative;
+  right: 30vh;
+  max-width: 55vw;
+  border-radius: 50%;
+}
+.mod-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#btn {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.mod-text h2 {
+  font-size: 3em;
+}
+
+.mod-bio {
+  text-align: center;
+}
