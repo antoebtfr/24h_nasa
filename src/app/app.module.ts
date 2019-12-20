@@ -11,6 +11,8 @@ import { ExploModeComponent } from './pages/explo-mode/explo-mode.component';
 import { Map1Component } from './maps/map1/map1.component';
 
 import { VariablesGlobales } from '../app/variableGlobales';
+import { MysteryMapComponent } from './maps/mystery-map/mystery-map.component';
+import { BddPagesComponent } from './pages/bdd-pages/bdd-pages.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,8 @@ import { VariablesGlobales } from '../app/variableGlobales';
     ModeSelectComponent,
     ExploModeComponent,
     Map1Component,
+    MysteryMapComponent,
+    BddPagesComponent,
   ],
   imports: [
     BrowserModule,

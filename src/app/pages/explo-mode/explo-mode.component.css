@@ -1,0 +1,38 @@
+#body {
+  background-image: url(https://www.cite-espace.com/assets/images/backgrounds/practical-informations__header.jpg);
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+h2 {
+  font-size: 3em;
+  padding: 50px;
+}
+.route {
+  height: 30vh;
+  width: 30vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px;
+  transition: 0.8s;
+}
+
+.route:hover {
+  width: 33vh;
+  height: 33vh;
+}
+
+#routes {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90vw;
+}

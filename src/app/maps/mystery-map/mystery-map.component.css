@@ -1,0 +1,135 @@
+#body {
+  background-image: url(https://media.giphy.com/media/sIIhZliB2McAo/200.gif);
+  height: 100vh;
+}
+
+/* Modal */
+
+.modal {
+  width: 60vw;
+  height: 100vh;
+  background: green;
+  position: fixed;
+  top: 0;
+  right: 20vw;
+  z-index: 10;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal h2 {
+  font-size: 3em;
+  padding: 40px;
+  text-align: center;
+}
+
+.modal #mod-text {
+  text-align: center;
+  font-size: 2em;
+}
+#btn {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  font-size: 2em;
+  cursor: pointer;
+}
+/* Monsters */
+
+.monster {
+  position: fixed;
+}
+#pikachu {
+  background-image: url("https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c325.png");
+  background-size: cover;
+  background-position: center;
+  width: 30vh;
+  height: 30vh;
+  bottom: -10vh;
+  animation: pika-pop 4s infinite;
+}
+
+#stack {
+  background-image: url("https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/stackoverflow-512.png");
+  background-size: cover;
+  background-position: center;
+  width: 10vh;
+  height: 10vh;
+  top: 30vh;
+  left: 10vw;
+  transform: rotateZ(45deg);
+}
+
+#ricardo {
+  background-image: url(https://steamuserimages-a.akamaihd.net/ugc/945093483574536818/9BB7392E074EBFFBAF5D81AE795156C96FAECFED/);
+  background-size: cover;
+  background-position: center;
+  width: 40vh;
+  height: 40vh;
+  top: 30vh;
+  left: 10vw;
+}
+
+#smartguy {
+  background-image: url(https://media.tenor.com/images/426d96f37b83858a783733a570cae00b/tenor.gif);
+  background-size: cover;
+  background-position: center;
+  width: 40vh;
+  height: 40vh;
+  top: 15vh;
+  right: 10vw;
+}
+
+#mcdonald {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/50/McDonald%27s_SVG_logo.svg);
+  background-size: cover;
+  background-position: center;
+  width: 20vh;
+  height: 20vh;
+  bottom: 5vh;
+  right: 10vw;
+  animation: disparition 3s;
+}
+
+#fusee {
+  background-image: url(https://www.stickpng.com/assets/images/58e9117beb97430e819064d6.png);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  bottom: -400vh;
+  transform: rotateZ(-45deg);
+  animation: decollage 10s linear;
+}
+
+#ballerine {
+  background-image: url(http://gifimgs.com/animations/sports/ice-skating/ice_skater.gif);
+  background-size: cover;
+  background-position: center;
+  width: 20vh;
+  height: 20vh;
+  top: 8vh;
+  right: 60vw;
+  transform: rotateZ(-45deg);
+}
+
+/* Animations */
+
+@keyframes decollage {
+  from {
+    display: block;
+    transform: translateY(600%), rotateZ(-45deg);
+  }
+  to {
+    transform: translateY(-500%);
+    display: block;
+  }
+}
+
+@keyframes pika-pop {
+  50% {
+    transform: translateY(50%);
+  }
+}

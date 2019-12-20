@@ -1,5 +1,8 @@
 <section id="body">
-    salut je suis le test
-    <router-outlet></router-outlet>
-    Fin du test
+    <h2> Veuillez choisir une map : </h2>
+    <div id="routes">
+    <div *ngFor="let route of routes" [routerLink]="route.route" class='route' style.background-image="url({{route.img}})">
+            {{route.name}}
+        </div>
+    </div>
 </section>
