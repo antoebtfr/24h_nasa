@@ -25,6 +25,7 @@ label {
   display: flex;
   flex-flow: wrap row;
   justify-content: space-around;
+  transition: 2s;
 }
 .planet {
   width: 15vw;

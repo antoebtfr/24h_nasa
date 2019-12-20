@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class BddPagesComponent implements OnInit {
   clicked = false;
   solarSys = [];
+  switchCount = 0;
   constructor(private _plaServ: PlaneteService, public varGlo: VariablesGlobales) { }
 
   ngOnInit() {
@@ -19,8 +20,26 @@ export class BddPagesComponent implements OnInit {
   clickElement(name, img, bio) {
     this.clicked = !this.clicked;
     this.varGlo.name = name;
-
     this.varGlo.img = img;
     this.varGlo.bio = bio;
+  }
+
+  switch() {
+    if (this.switchCount % 2 === 0) {
+      document.getElementById('solar-system').style.opacity = '0';
+      setTimeout(() => {
+        this._plaServ.getPlanetOutMilkWay().subscribe(data => this.solarSys = data);
+        document.getElementById('solar-system').style.opacity = '1';
+        this.switchCount ++;
+      }, 2000);
+    } else {
+      document.getElementById('solar-system').style.opacity = '0';
+      setTimeout(() => {
+        this._plaServ.getPlanetsSysSol().subscribe(data => this.solarSys = data);
+        document.getElementById('solar-system').style.opacity = '1';
+        this.switchCount ++;
+      }, 2000);
+    }
+
   }
 }
