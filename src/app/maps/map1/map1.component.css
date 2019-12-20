@@ -26,6 +26,8 @@ h1 {
   background-position: center;
   cursor: pointer;
   position: fixed;
+  border-radius: 50%;
+  transition: 0.8s;
 }
 
 .planet:hover::before {
@@ -46,7 +48,6 @@ h1 {
   left: -80vw;
   width: 200vh;
   height: 200vh;
-  border-radius: 50%;
 }
 
 #mercure {
@@ -54,7 +55,6 @@ h1 {
   left: 21vw;
   width: 7vh;
   height: 7vh;
-  border-radius: 50%;
 }
 
 #vénus {
@@ -62,7 +62,6 @@ h1 {
   left: 28vw;
   width: 10vh;
   height: 10vh;
-  border-radius: 50%;
 }
 
 #terre {
@@ -70,7 +69,6 @@ h1 {
   left: 35.5vw;
   width: 6vh;
   height: 6vh;
-  border-radius: 50%;
 }
 
 #mars {
@@ -78,14 +76,12 @@ h1 {
   left: 44.3vw;
   width: 6vh;
   height: 6vh;
-  border-radius: 50%;
 }
 #jupiter {
   top: 29vh;
   left: 50vw;
   width: 24vh;
   height: 24vh;
-  border-radius: 50%;
 }
 #saturne {
   top: 23vh;
@@ -116,12 +112,24 @@ h1 {
   left: 0;
 }
 
+#spaceship{
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh; 
+  width: 7vh;
+  height: 7vh;
+  background-image: url(https://cdn.pixabay.com/photo/2017/01/31/14/35/fighter-2024613_960_720.png);
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
 /* Modal */
 
 #modal {
   width: 80vw;
   height: 80vh;
-  background: red;
+  background: #000000c9;
   position: fixed;
   top: 100px;
   right: 100px;
@@ -158,4 +166,8 @@ h1 {
 
 .mod-text h2{
   font-size: 3em; 
+}
+
+.mod-bio{
+  text-align: center;
 }

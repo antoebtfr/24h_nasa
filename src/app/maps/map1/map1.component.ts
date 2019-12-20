@@ -15,7 +15,9 @@ export class Map1Component implements OnInit {
 
   ngOnInit() {
     this._plaServ.getPlanets()
-    .subscribe( data => this.planets = data );
+      .subscribe(data => this.planets = data);
+    this.planetHover();
+    this.planetLeave();
   }
 
   toggleModal(name, img, bio) {
@@ -25,4 +27,37 @@ export class Map1Component implements OnInit {
     this.varGlo.bio = bio;
   }
 
+  planetHover() {
+    document.getElementById('spaceship').addEventListener('mouseover', () => {
+      let result;
+      result = document.getElementsByClassName('planet');
+      for (const div of result) {
+        div.style.backgroundColor = 'blue';
+      }
+      console.log(result);
+    });
+  }
+  planetLeave() {
+    document.getElementById('spaceship').addEventListener('mouseout', () => {
+      let result;
+      let i = 0;
+      result = document.getElementsByClassName('planet');
+      for (const div of result) {
+        div.style.backgroundColor = '';
+        i++;
+      }
+      console.log(result);
+    });
+  }
+
+  // planetLeave() {
+  //   document.getElementById('particles-js').addEventListener('mouseover', () => {
+  //     let result;
+  //     result = document.getElementsByClassName('planet');
+  //     for (const div of result) {
+  //       div.style.backgroundColor = 'yellow';
+  //     }
+  //     console.log(result);
+  //   });
+  // }
 }
