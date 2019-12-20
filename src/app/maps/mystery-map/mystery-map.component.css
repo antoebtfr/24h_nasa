@@ -103,6 +103,7 @@
   bottom: -400vh;
   transform: rotateZ(-45deg);
   animation: decollage 10s linear;
+  z-index: 10;
 }
 
 #ballerine {
@@ -114,6 +115,26 @@
   top: 8vh;
   right: 60vw;
   transform: rotateZ(-45deg);
+}
+
+#rick {
+  background-image: url(https://media2.giphy.com/media/psmJf376CrS92Dy5wf/giphy.gif);
+  background-size: cover;
+  background-position: center;
+  width: 30vh;
+  height: 30vh;
+  top: 18vh;
+  right: 60vw;
+}
+
+#brice{
+  background-image: url(../../../assets/briceVSmenage.gif);
+  background-size: cover;
+  background-position: center;
+  width: 30vh;
+  height: 30vh;
+  bottom: 18vh;
+  right: 30vw;
 }
 
 #end {
@@ -133,7 +154,7 @@
   transition: 4s;
 }
 
-#bonne{
+#bonne {
   font-size: 3.7em;
 }
 /* Animations */

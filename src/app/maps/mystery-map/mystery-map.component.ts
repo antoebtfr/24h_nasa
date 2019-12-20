@@ -19,7 +19,7 @@ export class MysteryMapComponent implements OnInit {
     this.endIsOpen = true;
     setTimeout(() => {
       document.getElementById('end').style.opacity = '1';
-    }, 5000);
+    }, 6000);
   }
 
 }
