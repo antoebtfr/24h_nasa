@@ -1,0 +1,173 @@
+#body {
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2.3em;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+@keyframes ripple {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Planets, Stars and  Satellite */
+
+.planet {
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  position: fixed;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+
+.planet:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation: ripple 2s linear infinite;
+  border: solid white 2px;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+
+#soleil {
+  top: -40vh;
+  left: -80vw;
+  width: 200vh;
+  height: 200vh;
+}
+
+#mercure {
+  top: 48vh;
+  left: 21vw;
+  width: 7vh;
+  height: 7vh;
+}
+
+#vénus {
+  top: 44vh;
+  left: 28vw;
+  width: 10vh;
+  height: 10vh;
+}
+
+#terre {
+  top: 43.5vh;
+  left: 35.5vw;
+  width: 6vh;
+  height: 6vh;
+}
+
+#mars {
+  top: 40.7vh;
+  left: 44.3vw;
+  width: 6vh;
+  height: 6vh;
+}
+#jupiter {
+  top: 29vh;
+  left: 50vw;
+  width: 24vh;
+  height: 24vh;
+}
+#saturne {
+  top: 23vh;
+  left: 63vw;
+  width: 27vh;
+  height: 27vh;
+}
+
+#uranus {
+  top: 25.5vh;
+  left: 77.5vw;
+  width: 10vh;
+  height: 10vh;
+}
+
+#neptune {
+  top: 19vh;
+  left: 85.5vw;
+  width: 10vh;
+  height: 10vh;
+}
+
+#particles-js {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#spaceship{
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh; 
+  width: 7vh;
+  height: 7vh;
+  background-image: url(https://cdn.pixabay.com/photo/2017/01/31/14/35/fighter-2024613_960_720.png);
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+/* Modal */
+
+#modal {
+  width: 80vw;
+  height: 80vh;
+  background: #000000c9;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  transition: 1s;
+}
+
+#mod-planet-img {
+  height: 80vh;
+  position: relative;
+  right: 30vh;
+  max-width: 55vw;
+  border-radius: 50%;
+}
+.mod-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#btn {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.4em;
+  cursor: pointer;
+  z-index:10; 
+}
+
+.mod-text h2{
+  font-size: 3em; 
+}
+
+.mod-bio{
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+<section id="body">
+    <h1> Système solaire </h1>
+</section>
+
+<div id="spaceship"></div>
+
+<!-- Planets, satellite and stars -->
+
+<div id="particles-js"></div>
+
+<div *ngFor="let planet of planets" id="{{planet.name | lowercase }}" class="planet"
+    (click)="toggleModal(planet.name, planet.img, planet.bio)" style.background-image="url({{planet.img}})">
+</div>
+
+<div [hidden]="!modalIsOpen" id="modal">
+    <div id="btn" (click)="toggleModal()">X</div>
+    <img id="mod-planet-img" [src]="varGlo.img">
+    <div class="mod-text">
+        <h2> {{varGlo.name}} </h2>
+        <div class="mod-bio"> {{varGlo.bio}} </div>
+    </div>
+</div>

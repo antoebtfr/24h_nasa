@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Nébuleuse",
+        "img": "https://cdn.pixabay.com/photo/2016/12/21/09/43/nebula-1922570_960_720.png",
+        "bio": "Une nébuleuse est un nuage interstellaire de gaz et de poussière. Les nébuleuses brillantes rayonnent la lumière du gaz dont elles sont constituées (nébuleuse d'émission) ou réfléchissent la lumière des étoiles (nébuleuse de réflexion), ou les deux. Les nébuleuses sombres sont des nuages de gaz et de poussières qui ne sont pas éclairés. Les nébuleuses planétaires sont des coquilles de gaz éjectées par les étoiles à la fin de leur vie."
+    },
+    {
+        "id": 2,
+        "name": "Trou-noir",
+        "img": "https://vignette.wikia.nocookie.net/fortnite/images/0/0e/Trou_Noir.png/revision/latest?cb=20191017051808&path-prefix=fr",
+        "bio": "Le terme 'trou noir' a été inventé par le physicien américain John Wheeler en 1967 pour décrire une concentration de masse-énergie qui s'est effondrée gravitationnellement sous sa propre force gravitationnelle et est devenue si compacte que même les photons ne peuvent échapper à cette force gravitationnelle."
+    },
+    {
+        "id": 3,
+        "name": "Etoile-filante",
+        "img": "https://i0.wp.com/astronomie-pratique.com/wp-content/uploads/2018/08/meteore.png?resize=640%2C320&ssl=1",
+        "bio": "Le terme 'étoile filante' est trompeur. Ce ne sont pas des étoiles filantes, mais des grains de poussière qui pénètrent dans la haute atmosphère terrestre à des vitesses comprises entre 30 et 70 km/s environ. Le réchauffement causé par la friction dans l'air tire alors des électrons hors des atomes : c'est ce qu'on appelle l'ionisation. Le résultat est une brillante et très courte traînée de lumière qui zoome sur le ciel. L'origine de ces corpuscules, dont beaucoup sont aussi gros qu'un grain de riz, est principalement cométaire. Lorsque notre planète, sur sa trajectoire autour du Soleil, croise les nombreuses veines de poussière que les comètes ont laissées dans leur sillage, les météores pleuvent par centaines toutes les heures. C'est ce qu'on appelle un essaim de météores, mais le terme le plus souvent utilisé est 'pluie de météores'."
+    },
+    {
+        "id": 4,
+        "name": "Galaxie",
+        "img": "https://www.stickpng.com/assets/images/580b585b2edbce24c47b2717.png",
+        "bio": "Une galaxie spirale est un ensemble de quelques centaines de milliards d'étoiles rassemblées dans un disque avec un renflement central sphérique lumineux appelé le bulbe. Le disque contient plusieurs bras lumineux qui tournent en spirale autour du bulbe. Les bras contiennent les étoiles les plus jeunes et les plus brillantes. Les galaxies spirales, comme la Voie lactée, contiennent de grandes quantités de gaz et de poussière."
+    }
+]
