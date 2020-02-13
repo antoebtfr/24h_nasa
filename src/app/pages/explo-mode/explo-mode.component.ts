@@ -14,11 +14,7 @@ export class ExploModeComponent implements OnInit {
     },
     {
       name: 'Hors Voie Lactée', route: './map2',
-      img: 'https://fr.ubergizmo.com/wp-content/uploads/2015/02/espace.jpg'
-    },
-    {
-      name: 'Map Mystère', route: './mystery',
-      img: 'http://fitoterapiakalauz.hu/wp-content/uploads/2014/02/kerdojel.jpg'
+      img: 'https://cdn.pixabay.com/photo/2019/06/08/18/32/universe-4260760_960_720.jpg'
     }
 
   ];

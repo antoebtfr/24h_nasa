@@ -13,7 +13,7 @@
     </div>
     
     <div [hidden]="!modalIsOpen" id="modal">
-        <div id="btn" (click)="toggleModal()">X</div>
+        <div id="btn" (click)="toggleModal('', '', '')">X</div>
         <img id="mod-planet-img" [src]="varGlo.img">
         <div class="mod-text">
             <h2> {{varGlo.name}} </h2>
