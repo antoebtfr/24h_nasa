@@ -1,27 +1,25 @@
-# NasaFront
+# SPACE - SOLO 24H
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+### **[SPACE WebSite](https://cranky-shirley-edcd00.netlify.com)** 
 
-## Development server
+![](https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5e43cd6245fb6200089d586c/screenshot.png)
+ - Development
+ - Last Updates
+ - Next Updates
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## DEVELOPMENT
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project was conceived in a rush of 24 hours at the Wild Code School - Bordeaux. The theme was **NASA**. It was my first 24 hours in solo. 
 
-## Build
+## Last Updates 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ - Deployment of the game on-line
 
-## Running unit tests
+## Next Updates
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+-	Adding website sound
+-	Correction of bugs
+-	Design rework
+-	Add some maps
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

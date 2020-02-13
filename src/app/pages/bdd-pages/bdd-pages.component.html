@@ -6,7 +6,7 @@
             (click)="clickElement(planet.name, planet.img, planet.bio)"></li>
     </ul>
     <section *ngIf='clicked' id="modal">
-        <div id="btn" (click)="clickElement()">X</div>
+        <div id="btn" (click)="clickElement('', '', '')">X</div>
         <img id="mod-planet-img" [src]="varGlo.img">
         <div class="mod-text">
             <h2> {{varGlo.name}} </h2>
