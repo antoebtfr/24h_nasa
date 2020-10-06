@@ -26,10 +26,17 @@
   height: 100vh;
   background-color: rgba(27, 27, 27, 0.924);
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   text-align: justify;
+  font-size: 0.5em;
+  overflow-y: scroll; 
+}
+
+#intro p {
+  width: 80%;
+  margin-bottom: 2vh;
 }
 
 .btn {
