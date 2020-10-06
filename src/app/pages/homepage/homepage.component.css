@@ -3,6 +3,7 @@
   background-image: url(https://img.lemde.fr/2016/08/14/33/0/1041/520/1440/720/60/0/e51d899_31915-etsnk0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   filter: blur(4px);
 }
 
@@ -22,7 +23,7 @@
 h1 {
   font-family: "Kanit", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2em;
+  letter-spacing: 10vw;
   font-size: 3em;
   margin-bottom: 5vh;
   position: relative;
@@ -30,7 +31,7 @@ h1 {
 }
 
 .btn {
-  width: 13vw;
+  padding: 0.5vw 1vw;
   height: 13vh;
   display: flex;
   align-items: center;
