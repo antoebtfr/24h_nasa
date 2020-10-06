@@ -10,12 +10,12 @@
         <img id="mod-planet-img" [src]="varGlo.img">
         <div class="mod-text">
             <h2> {{varGlo.name}} </h2>
-            <div class="mod-bio"> {{varGlo.bio}} </div>
+            <div class="mod-bio"> 
+                <p>{{varGlo.bio}}</p> </div>
         </div>
     </section>
 </section>
 
 <!--         Only fixed elements -->
 <div class="arrow" id="right" (click)="switch()">></div>
-<div class="arrow" id="left" (click)="switch()">
-    <</div>
+<div class="arrow" id="left" (click)="switch()"> < </div>
